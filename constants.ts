@@ -1,0 +1,45 @@
+import { PoseData } from './types';
+
+export const INITIAL_POSE: PoseData = {
+  Hips: { x: 0, y: 0, z: 0 },
+  Spine: { x: 0, y: 0, z: 0 },
+  Chest: { x: 0, y: 0, z: 0 },
+  Neck: { x: 0, y: 0, z: 0 },
+  Head: { x: 0, y: 0, z: 0 },
+  Shoulder_L: { x: 0, y: 0, z: 0 },
+  UpperArm_L: { x: 0, y: 0, z: 0.2 }, // Slight relaxation
+  LowerArm_L: { x: 0, y: 0, z: 0 },
+  Hand_L: { x: 0, y: 0, z: 0 },
+  Shoulder_R: { x: 0, y: 0, z: 0 },
+  UpperArm_R: { x: 0, y: 0, z: -0.2 },
+  LowerArm_R: { x: 0, y: 0, z: 0 },
+  Hand_R: { x: 0, y: 0, z: 0 },
+  UpperLeg_L: { x: 0, y: 0, z: 0 },
+  LowerLeg_L: { x: 0, y: 0, z: 0 },
+  Foot_L: { x: 0, y: 0, z: 0 },
+  UpperLeg_R: { x: 0, y: 0, z: 0 },
+  LowerLeg_R: { x: 0, y: 0, z: 0 },
+  Foot_R: { x: 0, y: 0, z: 0 },
+};
+
+export const BONE_LABELS: Record<string, string> = {
+  Hips: "Hips (Root)",
+  Spine: "Lower Spine",
+  Chest: "Chest",
+  Neck: "Neck",
+  Head: "Head",
+  Shoulder_L: "L. Shoulder",
+  UpperArm_L: "L. Upper Arm",
+  LowerArm_L: "L. Forearm",
+  Hand_L: "L. Hand",
+  Shoulder_R: "R. Shoulder",
+  UpperArm_R: "R. Upper Arm",
+  LowerArm_R: "R. Forearm",
+  Hand_R: "R. Hand",
+  UpperLeg_L: "L. Thigh",
+  LowerLeg_L: "L. Shin",
+  Foot_L: "L. Foot",
+  UpperLeg_R: "R. Thigh",
+  LowerLeg_R: "R. Shin",
+  Foot_R: "R. Foot",
+};
